@@ -23,11 +23,11 @@ class ParingIntegersToSumTest {
         ParingIntegersToSum.main(new String[]{"10", "3", "10", "3", "7", "6", "-13", "26", "9999", "13", "0"});
 
         String output = """
-                3 10
-                3 10
-                6 7
                 -13 26
-                0 13""";
+                0 13
+                3 10
+                3 10
+                6 7""";
 
         assertEquals(output, outputStreamCaptor.toString().trim());
     }
