@@ -33,7 +33,7 @@ class ParingIntegersToSumTest {
     }
 
     @Test
-    void shouldReturnError() {
+    void shouldReturnError_whenInputIsNotAListOfNumbers() {
         ParingIntegersToSum.main(new String[]{"0", "13", "A", "."});
 
         String output = "ERROR: At least one of the argument is not an Integer (min=-2147483648, max=2147483647)";
